@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.course.Order;
+import com.example.demo.course.entities.Order;
 import com.example.demo.repositories.OrderRepository;
 import com.example.demo.services.OrderService;
 

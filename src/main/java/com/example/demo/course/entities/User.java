@@ -1,4 +1,4 @@
-package com.example.demo.course;
+package com.example.demo.course.entities;
 
 import java.io.Serializable;
 import java.util.ArrayList;

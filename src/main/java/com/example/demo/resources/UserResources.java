@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.course.User;
+import com.example.demo.course.entities.User;
 import com.example.demo.repositories.UserRepository;
 import com.example.demo.services.UserService;
 
