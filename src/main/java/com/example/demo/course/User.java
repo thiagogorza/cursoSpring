@@ -1,13 +1,18 @@
 package com.example.demo.course;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 @Entity
+@Table(name = "table_user")
 public class User implements Serializable {
 
 	private static final long serialVersionUID = 1L;
@@ -22,7 +27,10 @@ public class User implements Serializable {
 	public User() {
 		
 	}
-
+	
+	@OneToMany(mappedBy = "client")
+	List<Order> orders = new ArrayList<>();
+	
 	public User(Long id, String name, String email, String phone, String password) {
 		super();
 
